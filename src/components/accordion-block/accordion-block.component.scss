@@ -9,7 +9,7 @@
                 @include bp.respond-below('tablet'){font-size: 1.125rem;}
                 @include bp.respond-below('mobile-lg'){font-size: 1rem;}
                 &::after{
-                    background-image: url("../../assets/images/icons/Vector.png") !important;
+                    background-image: url("../../assets/images/icons/arrow-up-icon.png") !important;
                     width: 20px; height: 11px;
                 }
             }

@@ -5,6 +5,7 @@
     display: flex; align-items: center; justify-content: space-between;
 }
 
+.logo .isMobile{display: none;}
 .right-block{
     position: relative;display: flex; align-items: center; padding-left: 40px;
     &::before{
@@ -36,5 +37,11 @@
 }
 
 .mega-menu-toggle{
-    border: none; background-color: transparent; padding: 0;
+    border: none; background-color: transparent; padding: 0; display: none; margin-left: 16px;
+}
+
+@media screen and (max-width:768px){
+    .mega-menu-toggle{display: inline-block;}
+    .logo .isDesktop{ display: none !important; }
+    .logo .isMobile{display: inline-flex;}
 }
