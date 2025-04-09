@@ -1,47 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
 @use "styles/custom-breakpoints" as bp;
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
 
 
 body {
-    font-family: 'BSP-Regular', sans-serif;
+  font-family: "BSP-Regular", sans-serif;
 }
 
 // Layout styles Starts
 // Common Layout styles for the component container
-.component-container{
-    width: 100%;
-    max-width: 1328px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
+.component-container {
+  width: 100%;
+  max-width: 1328px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 // Common Layout styles for the component container Ends
 // Layout styles Ends
 
-
 // Button Styles Starts
-// Common Button styles 
-.btnPrimary{
-    display: inline-block;
-    padding: 13px 32px;
-    font-family: 'BSP-Bold', sans-serif;
-    font-size: 1rem;
-    line-height: 1.5;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    background-color: #0062E1;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase; letter-spacing: normal;
-    @include bp.respond-below('mobile-xxs'){
-        font-size: 0.875rem;
-     }
+// Common Button styles
+.btnPrimary {
+  display: inline-block;
+  padding: 13px 32px;
+  font-family: "BSP-Bold", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0062e1;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: normal;
+  @include bp.respond-below("mobile-xxs") {
+    font-size: 0.875rem;
+  }
 }
-.btnPrimary:hover{
-    background-color: #0056b3;
+.btnPrimary:hover {
+  background-color: #0056b3;
 }
 // Heading styles Starts
 // Common Heading styles
@@ -64,28 +66,39 @@ body {
             font-size: 0.875rem;
           }
     }
-}
+  }
+  .sec-description {
+    font-family: "BSP-Regular", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #1a314d;
+    @include bp.respond-below("mobile-xxs") {
+      font-size: 0.875rem;
+    }
+  }
+
 
 // Global Overrides Styles for Component Level
-.sec-content-image-split{
-    .text-content{
-        p{
-            font-family: "BSP-Regular", sans-serif;
-            font-size: 1.125rem;
-            line-height: 1.5;
-            margin-bottom: 15px;
-            color: #1A314D;
-            @include bp.respond-below('sm') {
-                font-size: 1rem;
-              }
-            @include bp.respond-below('mobile-xxs') {
-              font-size: 0.875rem;
-            }
-            &:last-child{
-                margin-bottom: 0;
-            }
-        }
+.sec-content-image-split {
+  .text-content {
+    p {
+      font-family: "BSP-Regular", sans-serif;
+      font-size: 1.125rem;
+      line-height: 1.5;
+      margin-bottom: 15px;
+      color: #1a314d;
+      @include bp.respond-below("sm") {
+        font-size: 1rem;
+      }
+      @include bp.respond-below("mobile-xxs") {
+        font-size: 0.875rem;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
+  }
 }
 
 
