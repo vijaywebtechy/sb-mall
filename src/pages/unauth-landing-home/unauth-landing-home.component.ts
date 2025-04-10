@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { ContentImageSplitComponent } from '../../components/content-image-split/content-image-split.component';
 import { AddBannerComponent } from '../../components/add-banner/add-banner.component';
-import { TabCarouselComponent } from "../../components/tab-carousel/tab-carousel.component";
 import { DownloadAppComponent } from "../../components/download-app/download-app.component";
 import { AppHelpComponent } from '../../components/app-help/app-help.component';
 import { SwitchBankComponent } from '../../components/switch-bank/switch-bank.component';
@@ -15,7 +14,6 @@ import { IconTextCarouselComponent } from '../../components/icon-text-carousel/i
   imports: [
     ContentImageSplitComponent,
     AddBannerComponent,
-    TabCarouselComponent,
     DownloadAppComponent,
     AppHelpComponent,
     SwitchBankComponent,
