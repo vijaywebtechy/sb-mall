@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "dev": "ng serve",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
@@ -23,7 +24,6 @@
     "@angular/ssr": "^19.2.5",
     "bootstrap": "^5.3.3",
     "express": "^4.18.2",
-    "ngx-owl-carousel-o": "^19.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
