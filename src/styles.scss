@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @use "styles/custom-breakpoints" as bp;
-@import "ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
-@import "ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
+// @import "ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
+// @import "ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
 
 
 body {
@@ -13,6 +13,14 @@ body {
 .component-container {
   width: 100%;
   max-width: 1328px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.component-container-two {
+  width: 100%;
+  max-width: 1220px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
@@ -117,5 +125,12 @@ body {
     &:focus{
         background-color: #0062E1 !important;
         color: #fff !important;
+    }
+}
+
+
+.btn-outline-light{
+    &:hover{
+        color: #0062E1 !important;
     }
 }
