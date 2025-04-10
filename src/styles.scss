@@ -1,8 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 @use "styles/custom-breakpoints" as bp;
-@import "ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
-@import "ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
-
 
 body {
   font-family: "BSP-Regular", sans-serif;
@@ -47,37 +44,44 @@ body {
 }
 // Heading styles Starts
 // Common Heading styles
-.sec-title-wrap{
-    .sec-title{
-        font-family: 'BSP-Regular', sans-serif; font-size: 2.625rem; line-height: 1.3; margin-bottom: 24px; color: #1A314D;
-        @include bp.respond-below('sm') {
-            font-size: 2.375rem;
-          }
-          @include bp.respond-below('mobile-xxs') {
-            font-size: 1.75rem;
-          }
+.sec-title-wrap {
+  .sec-title {
+    font-family: "BSP-Regular", sans-serif;
+    font-size: 2.625rem;
+    line-height: 1.3;
+    margin-bottom: 24px;
+    color: #1a314d;
+    @include bp.respond-below("sm") {
+      font-size: 2.375rem;
     }
-    .sec-description{
-        font-family: 'BSP-Regular', sans-serif; font-size: 1.25rem; line-height: 1.5; margin-bottom: 10px; color: #1A314D;
-        @include bp.respond-below('sm') {
-            font-size: 1rem;
-          }  
-        @include bp.respond-below('mobile-xxs') {
-            font-size: 0.875rem;
-          }
+    @include bp.respond-below("mobile-xxs") {
+      font-size: 1.75rem;
     }
   }
   .sec-description {
     font-family: "BSP-Regular", sans-serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
     line-height: 1.5;
     margin-bottom: 10px;
     color: #1a314d;
+    @include bp.respond-below("sm") {
+      font-size: 1rem;
+    }
     @include bp.respond-below("mobile-xxs") {
       font-size: 0.875rem;
     }
   }
-
+}
+.sec-description {
+  font-family: "BSP-Regular", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #1a314d;
+  @include bp.respond-below("mobile-xxs") {
+    font-size: 0.875rem;
+  }
+}
 
 // Global Overrides Styles for Component Level
 .sec-content-image-split {
@@ -101,21 +105,32 @@ body {
   }
 }
 
-
 // Custom Properties for buttons
-.btn-primary{
-    background-color: #0062E1 !important;
-    border-color: #0062E1 !important;
+.btn-primary {
+  background-color: #0062e1 !important;
+  border-color: #0062e1 !important;
 }
-.btn-outline-primary{
-    border-color: #0062E1 !important;
-    color: #0062E1 !important;
-    &:hover{
-        background-color: #0062E1 !important;
-        color: #fff !important;
-    }
-    &:focus{
-        background-color: #0062E1 !important;
-        color: #fff !important;
-    }
+.btn-outline-primary {
+  border-color: #0062e1 !important;
+  color: #0062e1 !important;
+  &:hover {
+    background-color: #0062e1 !important;
+    color: #fff !important;
+  }
+  &:focus {
+    background-color: #0062e1 !important;
+    color: #fff !important;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 30px;
+  height: 4px;
+  background-color: #d1d5db; /* Tailwind's gray-300 */
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #3b82f6; /* Tailwind's blue-500 */
 }
