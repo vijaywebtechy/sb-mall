@@ -7,10 +7,6 @@ import {
   AfterViewInit,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { register } from 'swiper/element/bundle';
-
-// Register Swiper custom elements
-register();
 
 @Component({
   selector: 'app-tab-carousel',
