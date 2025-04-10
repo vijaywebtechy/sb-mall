@@ -35,7 +35,6 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/swiper/swiper.min.css",
               "src/assets/fonts/fonts.css",
               "src/styles.scss"
             ],

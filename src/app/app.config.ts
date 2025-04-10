@@ -8,11 +8,6 @@ import {
 } from '@angular/platform-browser';
 import { provideAnimations } from '@angular/platform-browser/animations';
 
-import { register } from 'swiper/element/bundle';
-
-// Register Swiper custom elements
-register();
-
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
