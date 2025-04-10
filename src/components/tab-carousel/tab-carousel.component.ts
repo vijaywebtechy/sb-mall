@@ -27,6 +27,9 @@ export class TabCarouselComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     const swiperEl = this.swiperContainer.nativeElement;
+    // const swiperEl = document.querySelector('swiper-container');
+    // swiper elementconst swiperEl = document.querySelector('swiper-container');
+ 
 
     Object.assign(swiperEl, {
       slidesPerView: this.slidesPerView,
