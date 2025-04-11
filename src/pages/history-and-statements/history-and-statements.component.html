@@ -3,11 +3,19 @@
         <app-welcome-user-banner></app-welcome-user-banner>
         <app-my-solutioncards></app-my-solutioncards>
     </div>
-    <div class="component-container-two">
+    <div class="component-container-two mt-5">
         <div class="container-fluid px-0">
             <div class="row g-3">
                 <div class="col-lg-8">
+                    <h2 class="heading-title">Transaction history</h2>
                     <div class="table-container">
+                     <ng-select
+                        [items]="accounts"
+                        bindLabel="name"
+                        placeholder="Select an account"
+                        [(ngModel)]="selectedAccount"
+                        class="custom-ngs">
+                      </ng-select>
                         <div class="custom-table">
                             <ul class="table-header-ul">
                                 <li><span>Date</span></li>
@@ -59,7 +67,15 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
+                    <h2 class="heading-title">Statements</h2>
                     <div class="statement-container">
+                        <ng-select
+                        [items]="accounts"
+                        bindLabel="name"
+                        placeholder="Select an account"
+                        [(ngModel)]="selectedAccount"
+                        class="custom-ngs">
+                      </ng-select>
                         <ul class="statement-ul">
                             <li>
                                 <div>
@@ -94,6 +110,7 @@
                                 <button type="button" class="download-btn"><img src="assets/images/icons/download-icon.png" alt="download icon" class="img-fluid" /></button>
                             </li>
                         </ul>
+                        <button type="button" class="text-btn">view all</button>
                     </div>
                 </div>
             </div>
