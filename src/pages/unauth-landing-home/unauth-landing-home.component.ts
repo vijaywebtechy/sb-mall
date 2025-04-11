@@ -7,7 +7,7 @@ import { SwitchBankComponent } from '../../components/switch-bank/switch-bank.co
 import { AccordionBlockComponent } from '../../components/accordion-block/accordion-block.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { UnauthBannerComponent } from '../../components/unauth-banner/unauth-banner.component';
-import { IconTextCarouselComponent } from '../../components/icon-text-carousel/icon-text-carousel.component';
+// import { IconTextCarouselComponent } from '../../components/icon-text-carousel/icon-text-carousel.component';
 
 @Component({
   selector: 'app-unauth-landing-home',
@@ -20,11 +20,9 @@ import { IconTextCarouselComponent } from '../../components/icon-text-carousel/i
     AccordionBlockComponent,
     FooterComponent,
     UnauthBannerComponent,
-    IconTextCarouselComponent
-],
+    // IconTextCarouselComponent,
+  ],
   templateUrl: './unauth-landing-home.component.html',
-  styleUrl: './unauth-landing-home.component.scss'
+  styleUrl: './unauth-landing-home.component.scss',
 })
-export class UnauthLandingHomeComponent {
-
-}
+export class UnauthLandingHomeComponent {}
