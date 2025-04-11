@@ -6,9 +6,14 @@ import { MegaMenuComponent } from '../components/mega-menu/mega-menu.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, TinyHeaderComponent, SbHeaderComponent, MegaMenuComponent],
+  imports: [
+    RouterOutlet,
+    TinyHeaderComponent,
+    SbHeaderComponent,
+    MegaMenuComponent,
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'standard-bank-web';
