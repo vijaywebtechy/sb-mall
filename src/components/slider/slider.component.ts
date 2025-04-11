@@ -26,6 +26,14 @@ export class SliderComponent implements AfterViewInit {
         el: '.custom-pagination',
         clickable: true,
       },
+      breakpoints: {
+        768: {
+          slidesPerView: 3,
+        },
+        1080: {
+          slidesPerView: 3,
+        },
+      },
       navigation: {
         nextEl: '.custom-next',
         prevEl: '.custom-prev',
