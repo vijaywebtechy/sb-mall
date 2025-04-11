@@ -13,7 +13,7 @@
         </div>
         <!-- Right Column (Image) -->
         <div class="col-lg-6 colRight d-flex align-items-center p-0 mobile-center" 
-            [ngClass]="{'justify-content-start': reverseLayout, 'justify-content-end': !reverseLayout}">
+            [ngClass]="{'justify-content-start': reverseLayout, 'justify-content-end': reverseLayout}">
             <div class="image-container">
                 <!-- Use desktop image by default -->
                 <img [src]="mobileImageUrl || imageUrl" [alt]="imageAlt || 'Image'" class="img-fluid">
